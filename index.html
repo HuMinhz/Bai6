@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Header</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <style>
+          body { min-width: 1440px; min-height: 1024px; margin: 0; background: #fafafa; font-family: 'Poppins', sans-serif; }
+          button, input, select { font-family: inherit; }
+        .header, .right, .search, .profile-top, .person, .email-row { display: flex; align-items: center; }
+        .header { justify-content: space-between; padding: 32px 40px 32px 40px; width:1282px; height: 72px; }
+        .right { gap: 20px; }
+        .search {background: white; width: 354px; height: 52px; border-radius: 8px;}
+        .search input[type="search"] { border: 0; outline: 0; }
+        .search input[type="submit"] { width: 20px; height: 20px; border: 0;}
+        .notification { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: #ffffff; border-radius: 8px; }
+        .avatar { width: 40px; height: 40px; border-radius: 8px; }
+        .sidebar { position: fixed; width: 78px; height: 1024px; padding-top: 135px; box-sizing: border-box; border-right: 1px solid #f0f0f0; background: white; }
+        .sidebar img { display: block; width: 24px; height: 24px; margin:47px 27px;}
+        .sidebar img.active { background: #eaf1ff;margin: 0px; padding: 17px 27px; }
+        .page { margin-left: 68px; }
+        .banner { height: 100px; width: 1282px; }
+        .banner img { display: block;}
+        .profile { width: 1282px; height: 856px; padding: 30px 0 71px; box-sizing: border-box; border-radius: 8px; background: #FFFFFF; }
+        .profile-top { padding: 0 32px; }
+        .img { display: flex; align-items: center; gap: 18px; }
+        .img-photo { width: 100px; height: 100px;}
+        .person h2 { margin-bottom: 8px; font-size: 16px; }
+        .person p, .email-age { color: #888; font-size: 16px; font-weight: 400; }
+        .edit-button { padding: 10px 32px 10px 0px; border: 0; border-radius: 7px; background: #4380f5; color: white;width: 93px; height:44px; }
+        .profile-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 24px; padding: 0 32px; }
+        .field { display: flex; flex-direction: column; box-sizing: border-box; gap: 12px; width: 100%; height:88px; font-size: 16px;font-weight:400;padding-bottom: 25px; padding-right: 32px;}
+        .field input, .field select { width: 100%; padding: 12px 32px; box-sizing: border-box; border: 0; border-radius: 7px; background: #f9f9f9; color: #888; font: inherit; }
+        .email-section {padding: 32px 952px 71px 32px;}
+.email-row { margin-bottom: 26px; font-size: 13px; gap: 20px; }
+        .email-icon { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 50%; background: #edf3ff; }
+        .email-icon img { width: 24px; height: 24px; }
+        .add-email { padding: 10px 24px; border: 0; border-radius: 6px; background: #edf3ff; color: #4182f9; font-size: 16px; font-weight: 400; }
+        .outerbox {padding: 32px 40px 32px 40px}
+     </style>
+ </head>
+<body>
+    <nav class="sidebar">
+        <img class="active" src="element-4.svg" alt="">
+        <img src="graph.svg" alt="">
+        <img src="medal-star.svg" alt="">
+        <img src="messages.svg" alt="">
+        <img src="setting-2.svg" alt="">
+    </nav>
+
+    <div class="page">
+    <div class="header">
+        <div>
+            <h3 style="font-size: 24px; font-weight: 500;">Welcome, Amanda</h3>
+            <p style="font-size:16px; font-weight: 400; color:#ADA7A7">Tue, 07 June 2022</p>
+        </div>
+        <div class="right">
+            <form class="search">
+                <img src="search-normal.svg" alt="search" style="padding: 14px 16px 14px 20px; ">
+                <input type="search" placeholder="Search">
+            </form>
+            <div class="notification">
+            <img src="notification-bing.svg" alt="Noti">
+            </div>
+            <img class="avatar" src="Rectangle 1072.svg" alt="Amanda" style="width: 52px; height: 52px;">
+        </div>
+    </div>
+    <div class="outerbox">
+        <div class="banner">
+            <img src="Rectangle 6691.svg" alt="None">
+        </div>
+        <section class="profile">
+            <div class="profile-top">
+                <div class="img">
+                    <img class="img-photo" src="Ellipse 11.svg" alt="Alexa Rawles" style="padding-bottom: 30px;">
+                    <div>
+                        <h2 style="padding-right: 803px;">Alexa Rawles</h2>
+                        <p>alexarawles@gmail.com</p>
+                    </div>
+                </div>
+                <button class="edit-button" type="button">Edit</button>
+            </div>
+
+            <form class="profile-form">
+                <label class="field">Full Name
+                    <input type="text" placeholder="Your First Name">
+                </label>
+                <label class="field">Nick name
+                    <input type="text" placeholder="Your Nick Name">
+                </label>
+                <label class="field">Gender
+                    <select>
+                        <option value="">Your Gender</option>
+                    </select>
+                </label>
+                <label class="field">Country
+                    <select>
+                        <option value="">Your Country</option>
+                    </select>
+                </label>
+                <label class="field">Language
+                    <select>
+                        <option value="">Your Language</option>
+                    </select>
+                </label>
+                <label class="field">Time Zone
+                    <select>
+                        <option value="">Your Time Zone</option>
+                    </select>
+                </label>
+            </form>
+
+            <section class="email-section">
+<h3 style="font-size:18px; font-weight:500;">My email Address</h3>
+                <div class="email-row">
+                    <span class="email-icon">
+                        <img src="sms.svg" alt="">
+                    </span>
+                    <div>
+                        <p style="font-size:16px; weight:400">alexarawles@gmail.com</p>
+                        <p class="email-age">1 month ago</p>
+                    </div>
+                </div>
+                <button class="add-email" type="button">+ Add Email Address</button>
+            </section>
+        </section>
+        </div>
+    </div>
+</body>
+</html>
